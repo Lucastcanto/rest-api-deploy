@@ -4,7 +4,7 @@ GET http://localhost:1234/movies
 
 ### //recuperar una pelicula por id
 
-GET http://localhost:1234/movies/1
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 
 ### //recuperar todas las peliculas por genero
 GET http://localhost:1234/movies?genre=Action
@@ -25,11 +25,14 @@ Content-Type: application/json
   ]
 }
 
+###//BORRAR UNA PELICULA 
+DELETE  http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
 ###//ACTUALIZAR UNA PELICULA
-PATCH http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
 Content-Type: application/json
 
 {
-    "title":"Batman: El Caballero de la Noche",
-    "year":2008
+    "year":2010
 }
